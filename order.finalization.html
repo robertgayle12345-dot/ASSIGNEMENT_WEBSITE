@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Finalization</title>
+    
+</head>
+<body>
+    <header>
+            <div id="banner">
+            <p>You Can Design Your Own Cake Just As You'd Like It !</p>
+            </div>
+        
+</header>
+    
+            <main>
+            <h1>Cake Order Finalization</h1>
+            <hr/>
+            
+        <h2>General Inquiries</h2>
+            <form action="confirmation.html" id="contactform">
+                <label for="Fullname">Name: *</label>
+                <input required type="text" id="Fullname" name="Fullname"/>
+                <br/><br/>
+                <label for="Email">Email Address</label>
+                <input required type="email" id="email" name="emailaddress"/>
+                <br/><br/>
+                <label>Would you like a service?</label>
+                <br/><br/>
+                <input type="radio" value="Y" name="Service"/>Yes
+                <input type="radio" value="N" name="Service"/>No
+                <br/><br/>
+                <label for="Type Of Cake">Cake Type</label>
+                <input required type="text" id="cake type" name="cake type"/>
+                <br/><br/>
+                 <label for="Shape">Cake Shape</label>
+                <input required type="text" id="cake shape" name="cake shape"/>
+                <br/><br/>
+                <label for="Level">Cake Level</label>
+                <input required type="text" id="cake level" name="cake level"/>
+                <br/><br/>
+                 <label for="Flavor">Cake Flavor</label>
+                <input required type="text" id="cake flavor" name="cake flavor"/>
+                <br/><br/>
+                 <input type="Pickup Delivery"/>
+                <button type="Button" onclick="ClearForm()">Pickup Delivery</button>
+                <br/><br/>
+                <label for="inquiry">State Your Inquiry *</label><br/>
+                <textarea required cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
+                <br/><br/>
+                <input type="submit"/>
+                <button type="Button" onclick="ClearForm()">Clear</button>
+            </form>
+        </article>
+            
+  
+</main>
+    
+<footer>
+           
+        
+</footer>
+    <script src="javascript/site.js"></script>   
+    
+</body>
+</html>
