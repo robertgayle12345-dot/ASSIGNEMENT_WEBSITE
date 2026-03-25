@@ -29,7 +29,7 @@
                 <label for="Fullname">Name: *</label>
                 <input required type="text" id="Fullname" name="Fullname"/>
                 <br/><br/>
-                <label for="Email">Email Address</label>
+                <label for="Email">Email Address:</label>
                 <input required type="email" id="email" name="emailaddress"/>
                 <br/><br/>
                 <label>Would you like to proceed with your order?</label>
@@ -37,22 +37,30 @@
                 <input type="radio" value="Y" name="Service"/>Yes
                 <input type="radio" value="N" name="Service"/>No
                 <br/><br/>
-                <label for="Type Of Cake">Cake Type</label>
-                <input required type="text" id="cake type" name="cake type"/>
+                 <input placeholder="📌 place address here" type="text"/>
+                <button type="Button" onclick="ClearForm()">Delivery Pickup</button>
                 <br/><br/>
-                 <label for="Shape">Cake Shape</label>
-                <input required type="text" id="cake shape" name="cake shape"/>
                 <br/><br/>
-                <label for="Level">Cake Level</label>
-                <input required type="text" id="cake level" name="cake level"/>
+                <label for="Payment">Payment Method: </label>
+                <select id="Payment" name="Payment">
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="PayPal">PayPal</option>
+                </select>
                 <br/><br/>
-                 <label for="Flavor">Cake Flavor</label>
-                <input required type="text" id="cake flavor" name="cake flavor"/>
+                <label for="Card Holder Name">Card Holder Name:</label>
+                <input required type="text" id="CardHolderName" name="CardHolderName"/>
                 <br/><br/>
-                 <input type="Pickup Delivery"/>
-                <button type="Button" onclick="ClearForm()">Pickup Delivery</button>
+                <label for="Card Number">Card Number:</label>
+                <input required type="text" id="CardNumber" name="CardNumber"/>
                 <br/><br/>
-                <label for="inquiry">State Your Inquiry *</label><br/>
+                <label for="CVV">CVV:</label>
+                <input required type="text" id="CVV" name="CVV"/>
+                <br/><br/>
+
+                <br/><br/>
+
+                <label for="inquiry">State Any Other Inquiry *</label><br/>
                 <textarea required cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
                 <br/><br/>
                 <input type="submit"/>
