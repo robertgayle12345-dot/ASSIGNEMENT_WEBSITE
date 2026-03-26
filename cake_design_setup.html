@@ -2,80 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Your Cake TOOLSET</title>
 </head>
     <body>
+        <nav>
             <a href="index_home_page.html">HOME PAGE</a>
-            <a href="order_finalization.html">FINALZE YOUR ORDER HERE</a>
+            <a href="order_finalization.html">FINALIZE YOUR ORDER HERE</a>
             <a href="login_page.html">LOG IN HERE</a>
-
+        </nav>
         <h1>YOUR MAGICAL CAKE CRAFTING TOOLSET</h1>
-
     <hr/>
     <h2>Designed By You to Be The Best Bite of Cake Ever!!</h2>
         <br/>  
           <br/>
-
             <h4>!FOLLOW THESE STEPS TO COMPLETE YOUR DESIGN WITH PERFECTION!</h4>                
         <ol>
-         
             <li>Choose cake size</li>
             <li>Choose cake flavor</li>
-            <li>Choose cake toppings</li>
+            <li>Choose cake frosting</li>
+            <li>Choose cake add on's</li>
             <li>special request</li>
             <li>Click next page to finalize your order</li>
-        </ol>
-                
+        </ol>  
             <br/>
-            <p>----------------------STEP ONE----------------------</p>
+                <!-- STEP 1: SIZE CLICK SELECTION -->
+                <h3>WHICH SIZE WOULD YOU LIKE TO ORDER</h3>
         <form>
-                <label>CHOOSE CAKE SIZE</label><br/><br/>
-                <input type="radio" value="SMALL_BUTTON" name="cake_size"/>SMALL
-                <input type="radio" value="MEDIUM_BUTTON" name="cake_size"/>MEDIUM
-                <input type="radio" value="LARGE_BUTTON" name="cake_size"/>LARGE
-                <br/>
-                <LAbel>OTHER</LAbel>
-                <textarea cols="1" rows="1" maxlength="25"></textarea>
+                <button type="button" onclick="addsize('Small')">SMALL 6"</button>
+                <button type="button" onclick="addsize('Medium')">MEDIUM 8"</button>
+                <button type="button" onclick="addsize('Large')">LARGE 10"</button>
+                <button type="button" onclick="addsize('extra Large')">EXTRA LARGE 14"</button>
+                 <p>YOU CHOSE: <span id="show-size">SMALL 6'</span></p>
         </form>                
             <br/>
-        <p>----------------------STEP TWO----------------------</p>
-
-                 <h2>CHOOSE CAKE FLAVOR</h2>
+                <!-- STEP 2: FLAVOR CLICK SELECTION -->
+                  <h3> CHOOSE THE FLAVOR YOU'D LIKE TO ORDER</h3>
+        <form>
+                <button type="button" onclick="addflavor('plain')">PLAIN</button>
+                <button type="button" onclick="addflavor('vanilla')">VANILLA</button>
+                <button type="button" onclick="addflavor('chocolate')">CHOCOLATE</button>
+                <button type="button" onclick="addflavor('lemon')">LEMON</button>
+                <button type="button" onclick="addflavor('red velvet')">RED VELVET</button>
+                <p>YOU CHOSE: <span id="show-flavor">PLAIN</span></p>
+        </form>        
+            <br/>
+             <!-- STEP 3: FROSTING CLICK SELECTION -->
+                 <h3>YOUR NEXT FUN PICK IS FROSTING SELECTION</h3>
+        <form>
+                <button type="button" onclick="addfrostin('White')">WHITE FROSTING</button>
+                <button type="button" onclick="addfrostin('Pink')">PINK FROSTING</button>
+                <button type="button" onclick="addfrostin('Chocolate')">CHOCOLATE FROSTING</button>
+                <button type="button" onclick="addfrostin('Blue')">BLUE FROSTING</button>
+                <p>A MAGNIFICENT PICK: <span id="show-frosting">WHITE FROSTING</span></p>
+       </form>
                  
 
+         <!-- STEP 4: CHECKBOX SELECTION FOR ADD ON's -->
+                 <h3>TIME TO LEVEL UP WITH ADD ON's OF YOUR CHOOSING</h3>
+            <p>Tick your best picks <img src="" alt="need img"></p>
+        <form>
+               <input type="checkbox" id="sprinkles"> <label for="sprinkles">Sprinkles</label><br>
+               <input type="checkbox" id="candles">   <label for="candles">Candles</label><br>
+               <input type="checkbox" id="berries">   <label for="berries">Berries</label><br>
+               <input type="checkbox" id="drip">      <label for="drip">Chocolate Drip</label><br>
+        </form>
             <br/>
-         <p>----------------------STEP THREE----------------------</p>
-                 <h2>CHOOSE CAKE TOPPINGS</h2>
-
-
-
-
-            <br/>
-            <p>----------------------STEP THREE----------------------</p>
-                 <h2>SPECIAL CUSTOMIZATION REQUEST</h2>
-
-
-
-
-
-
-
-    <img src="images/cake_rv.jpeg" alt="a slice of red velvet cake and a fork" 
-    height="472" width="640"/> 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam 
-        error nostrum quasi, facere sunt ex incidunt nesciunt vitae illo quaerat
-         dicta accusamus repellat corporis rem fugiat suscipit necessitatibus 
-         optio tenetur!
-    </p>
-
-
-    <br/>
-        
-   
-    
-
-    </body>
-    
+            <h5>Almost There <img src="" alt="needs a cheering on img"></h5><br/>
+        <form action="order_finalization.html" method="GET">
+            <h2><label for="message">SPECIAL CUSTOMIZATION REQUEST</label></h2>
+                 <textarea id="message" name="special_request" rows="5" 
+                 cols="30" maxlength="100" placeholder="HAPPY BIRTHDAY TED!!"></textarea>
+                 <br>
+                 <button type="submit">FINALIZE YOUR ORDER HERE<img src="" alt="need a img"></button>
+        </form>         
+</body>
 </html>
