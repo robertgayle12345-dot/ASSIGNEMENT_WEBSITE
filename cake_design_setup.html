@@ -16,16 +16,16 @@
 </header>
         <h1>YOUR MAGICAL CAKE CRAFTING TOOLSET</h1>
     <hr/>
-    <h2>Designed By You to Be The Best Bite of Cake Ever!!</h2>
+    <h2>Designed Your Best Bite Of Cake Ever!</h2>
         <br/>
           <br/>
-            <h4>!FOLLOW THESE STEPS TO COMPLETE YOUR DESIGN WITH PERFECTION!</h4>
+            <h4>FOLLOW THESE STEPS TO COMPLETE YOUR DESIGN WITH PERFECTION!</h4>
         <ol>
             <li>Choose cake size</li>
             <li>Choose cake flavor</li>
             <li>Choose cake frosting</li>
             <li>Choose cake add on's</li>
-            <li>special request</li>
+            <li>Special request</li>
             <li>Click next page to finalize your order</li>
         </ol>
             <br/>
@@ -34,41 +34,49 @@
 
         <form action="order_finalization.html" method="GET">
 
-                <input type="hidden" id="sizeinput" name="cakesize" value="small">
-                <button type="button" onclick="addsize('Small')">SMALL 6"</button>
-                <button type="button" onclick="addsize('Medium')">MEDIUM 8"</button>
-                <button type="button" onclick="addsize('Large')">LARGE 10"</button>
-                <button type="button" onclick="addsize('Extra Large')">EXTRA LARGE 14"</button>
-                 <p>YOU CHOSE: <span id="show-size">SMALL 6"</span></p>
+              <input type="checkbox" id="small6" name="small6" value="yes"/>
+               <label for="small6">Small 6"</label><br>
+               <input type="checkbox" id="medium8" name="medium8" value="yes"/>
+               <label for="medium8">Medium 8"</label><br>
+               <input type="checkbox" id="large10" name="large10" value="yes"/>
+               <label for="large10">Large 10"</label><br>
+               <input type="checkbox" id="extralarge14" name="extralarge14" value="yes"/>
+               <label for="extralarge14">Extra Large 14"</label><br>
 
             <br/>
                 <!-- STEP 2: FLAVOR CLICK SELECTION -->
                   <h3> CHOOSE THE FLAVOR YOU'D LIKE TO ORDER</h3>
-
-                <input type="hidden" id="flavorinput" name="cakeflavor" value="PLAIN">
-                <button type="button" onclick="addflavor('plain')">PLAIN</button>
-                <button type="button" onclick="addflavor('vanilla')">VANILLA</button>
-                <button type="button" onclick="addflavor('chocolate')">CHOCOLATE</button>
-                <button type="button" onclick="addflavor('lemon')">LEMON</button>
-                <button type="button" onclick="addflavor('red velvet')">RED VELVET</button>
-                <p>YOU CHOSE: <span id="show-flavor">PLAIN</span></p>
-
+                <input type="checkbox" id="plain" name="plain" value="yes"/>
+               <label for="plain">Plain</label><br>
+               <input type="checkbox" id="vanilla" name="vanilla" value="yes"/>
+               <label for="vanilla">Vanilla</label><br>
+               <input type="checkbox" id="chocolate" name="chocolate" value="yes"/>
+               <label for="chocolate">Chocolate</label><br>
+               <input type="checkbox" id="lemon" name="lemon" value="yes"/>
+               <label for="lemon">Lemon</label><br>
+               <input type="checkbox" id="red velvet" name="red velvet" value="yes"/>
+               <label for="red velvet">Red Velvet</label><br>
+                
             <br/>
              <!-- STEP 3: FROSTING CLICK SELECTION -->
                  <h3>YOUR NEXT FUN PICK IS FROSTING SELECTION</h3>
+                  <p>Select Your Best Option !</p>
+                <input type="checkbox" id="white frosting" name="whitefrosting" value="yes"/>
+               <label for="whitefrosting">White Frosting</label><br>
+               <input type="checkbox" id="pinkfrosting" name="pinkfrosting" value="yes"/>
+               <label for="pinkfrosting">Pink Frosting</label><br>
+               <input type="checkbox" id="chocolatefrosting" name="chocolatefrosting" value="yes"/>
+               <label for="chocolatefrosting">Chocolate Frosting</label><br>
+               <input type="checkbox" id="bluefrosting" name="bluefrosting" value="yes"/>
+               <label for="bluefrosting">Blue Frosting</label><br>
+            
+               
 
-                <input type="hidden" id="frostinginput" name="cakefrosting" value="White">
-                <button type="button" onclick="addfrosting('White')">WHITE FROSTING</button>
-                <button type="button" onclick="addfrosting('Pink')">PINK FROSTING</button>
-                <button type="button" onclick="addfrosting('Chocolate')">CHOCOLATE FROSTING</button>
-                <button type="button" onclick="addfrosting('Blue')">BLUE FROSTING</button>
-                <p>A MAGNIFICENT PICK: <span id="show-frosting">WHITE FROSTING</span></p>
-
-
+    
 
          <!-- STEP 4: CHECKBOX SELECTION FOR ADD ON's -->
                  <h3>TIME TO LEVEL UP WITH ADD ON's OF YOUR CHOOSING</h3>
-            <p>Tick your best picks <img src="" alt="need img"></p>
+            <p>Select Your Best Option !</p>
 
                <input type="checkbox" id="sprinkles" name="setsprinkles" value="yes"/>
                <label for="sprinkles">Sprinkles</label><br>
@@ -80,13 +88,12 @@
                <label for="drip">Chocolate Drip</label><br>
 
             <br/>
-            <h5>Almost There <img src="" alt="needs a cheering on img"></h5><br/>
 
             <h2><label for="message">SPECIAL CUSTOMIZATION REQUEST</label></h2>
                  <textarea id="message" name="special_request" rows="5"
                  cols="30" maxlength="100" placeholder="HAPPY BIRTHDAY TED!!"></textarea>
                  <br>
-                 <button type="submit">FINALIZE YOUR ORDER HERE<img src="" alt="need a img"></button>
+                 <button type="submit">FINALIZE YOUR ORDER HERE</button>
         </form>
 </body>
 </html>
