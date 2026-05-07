@@ -86,8 +86,9 @@ img{
     border-radius: 5px;
 }
 
-.navbar .nav-link {g
+.navbar .nav-link {
     color: white !important;
     font-weight: bold;
     padding: 8px 16px;
-    margin-right:250px;
+    margin-right: 250px;
+}
