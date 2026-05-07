@@ -14,14 +14,19 @@
 </head>
 
 <body style="background-color: beige">
-    <div class="container " style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <div class="container "
+        style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <header>
-            <nav class="navbar navbar-expand-lg  " data-bs-theme="dark" style="background: linear-gradient(45deg, #007bff, #6610f2);">
+            <nav class="navbar navbar-expand-lg  " data-bs-theme="dark"
+                style="background: linear-gradient(45deg, #007bff, #6610f2);">
 
                 <div class="container-fluid">
                     <a class="navbar-brand d-flex align-items-center" href="#">
-                        <img src="img/cakelogo.png" alt="Cake Dreams Logo" width="50" height="50" class="me-2" style="border: 1px solid #fff; border-radius: 5px; box-shadow: 0 0 5px rgba(255,255,255,0.5); display: inline-block;">
-                        <span style="font-weight: bold; font-family: 'Brush Script MT', cursive; color: #FFD700; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Cake Dreams</span>
+                        <img src="img/cakelogo.png" alt="Cake Dreams Logo" width="50" height="50" class="me-2"
+                            style="border: 1px solid #fff; border-radius: 5px; box-shadow: 0 0 5px rgba(255,255,255,0.5); display: inline-block;">
+                        <span
+                            style="font-weight: bold; font-family: 'Brush Script MT', cursive; color: #FFD700; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Cake
+                            Dreams</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -31,9 +36,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" href="index_home_page.html">HOME PAGE</a>
-                            <a class="nav-link" href="order_finalization.html">FINALIZE YOUR ORDER HERE</a>
-                            <a class="nav-link" href="cake_design_setup.html">DESIGN YOUR CAKE HERE</a>
-                            <a class="nav-link" href="login_page.html">LOG IN HERE</a>
+                            <a class="nav-link" href="order_finalization.html">FINALIZE YOUR ORDER</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +44,7 @@
 
         </header>
         <h1>YOUR MAGICAL CAKE CRAFTING TOOLSET </h1>
-        
+
         <hr />
         <h2>Designed Your Best Bite Of Cake Ever!</h2>
 
@@ -56,19 +59,19 @@
 
             <ul class="list-group">
                 <li class="list-group-item">
-                    <input type="checkbox" id="small6" name="small6" value="yes" />
+                    <input type="radio" id="small6" name="cakesize" value="Small 6" />
                     <label for="small6">Small 6"</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="medium8" name="medium8" value="yes" />
+                    <input type="radio" id="medium8" name="cakesize" value="Medium 8" />
                     <label for="medium8">Medium 8"</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="large10" name="large10" value="yes" />
+                    <input type="radio" id="large10" name="cakesize" value="Large 10" />
                     <label for="large10">Large 10"</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="extralarge14" name="extralarge14" value="yes" />
+                    <input type="radio" id="extralarge14" name="cakesize" value="Extra Large 14" />
                     <label for="extralarge14">Extra Large 14"</label><br>
                 </li>
             </ul>
@@ -81,24 +84,24 @@
 
             <ul class="list-group">
                 <li class="list-group-item">
-                    <input type="checkbox" id="plain" name="plain" value="yes" />
+                    <input type="radio" id="plain" name="cakeflavour" value="Plain" />
                     <label for="plain">Plain</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="vanilla" name="vanilla" value="yes" />
+                    <input type="radio" id="vanilla" name="cakeflavour" value="Vanilla" />
                     <label for="vanilla">Vanilla</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="chocolate" name="chocolate" value="yes" />
+                    <input type="radio" id="chocolate" name="cakeflavour" value="Chocolate" />
                     <label for="chocolate">Chocolate</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="lemon" name="lemon" value="yes" />
+                    <input type="radio" id="lemon" name="cakeflavour" value="Lemon" />
                     <label for="lemon">Lemon</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="red velvet" name="red velvet" value="yes" />
-                    <label for="red velvet">Red Velvet</label><br>
+                    <input type="radio" id="redvelvet" name="cakeflavour" value="Red Velvet" />
+                    <label for="redvelvet">Red Velvet</label><br>
                 </li>
 
             </ul>
@@ -111,19 +114,19 @@
             <p>Select Your Best Option !</p>
             <ul class="list-group">
                 <li class="list-group-item">
-                    <input type="checkbox" id="white frosting" name="whitefrosting" value="yes" />
+                    <input type="radio" id="whitefrosting" name="cakefrosting" value="White" />
                     <label for="whitefrosting">White Frosting</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="pinkfrosting" name="pinkfrosting" value="yes" />
+                    <input type="radio" id="pinkfrosting" name="cakefrosting" value="Pink" />
                     <label for="pinkfrosting">Pink Frosting</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="chocolatefrosting" name="chocolatefrosting" value="yes" />
+                    <input type="radio" id="chocolatefrosting" name="cakefrosting" value="Chocolate" />
                     <label for="chocolatefrosting">Chocolate Frosting</label><br>
                 </li>
                 <li class="list-group-item">
-                    <input type="checkbox" id="bluefrosting" name="bluefrosting" value="yes" />
+                    <input type="radio" id="bluefrosting" name="cakefrosting" value="Blue" />
                     <label for="bluefrosting">Blue Frosting</label><br>
                 </li>
 
@@ -162,18 +165,30 @@
             <br />
 
             <h2><label for="message">SPECIAL CUSTOMIZATION REQUEST</label></h2>
-          
+
             <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 100px"></textarea>
+                    name="customization" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Comments</label>
             </div>
-            
+
             <div class="d-grid gap-2 d-md-flex justify-content-md-end"></div>
             <button type="submit" class="btn btn-primary">Proceed to CheckOut</button>
-             <button type="button" onclick="ClearForm()" class="btn btn-secondary">Clear</button>
+            <button type="button" onclick="ClearCakeForm()" class="btn btn-secondary">Clear</button>
 
         </form>
+        <footer class="bg-light text-center text-lg-start mt-5">
+            <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
+                <h3>Address</h3>
+                <p>25 Lady Musgrave Road, Kingston</p>
+                <h3>Contact Information</h3>
+                <p>Phone: (1876) 321-4567</p>
+                <p>Email: info@cakedreams.com</p>
+                <div>
+            </footer>
+                    <script src="javascript/websitejavascript.js"></script>
+                </div>
+            </div>
     </div>
 </body>
 
