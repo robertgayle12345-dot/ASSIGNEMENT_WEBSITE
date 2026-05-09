@@ -69,3 +69,15 @@ function ClearCakeForm() {
     // Clear the special request textarea
     document.getElementById("floatingTextarea2").value = "";
 }
+
+$(function() {
+    var current = window.location.pathname;
+    $('.nav-link').each(function() {
+        var $this = $(this);
+        // if the link's href is found within the current URL
+        if (current.includes($this.attr('href'))) {
+            $this.addClass('active');
+            $this.attr('aria-current', 'page');
+        }
+    });
+});
