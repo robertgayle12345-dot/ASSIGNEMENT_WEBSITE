@@ -90,5 +90,15 @@ img{
     color: white !important;
     font-weight: bold;
     padding: 8px 16px;
-    margin-right: 250px;
+     margin-right: 0 !important;
+}
+
+.navbar-nav {
+    margin-left: auto !important;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-link {
+        margin-right: 250px !important;
+    }
 }
